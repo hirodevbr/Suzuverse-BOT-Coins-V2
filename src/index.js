@@ -23,13 +23,11 @@ for (const file of commandFiles) {
 // Evento "ready"
 client.once('ready', () => {
     const guildCount = client.guilds.cache.size; // Número de servidores
-    const userCount = client.users.cache.size; // Número de usuários totais acessíveis
     const botTag = client.user.tag; // Tag do bot
 
     console.log(`🤖 Bot iniciado com sucesso!`);
     console.log(`📌 Nome: ${botTag}`);
     console.log(`🌐 Servidores conectados: ${guildCount}`);
-    console.log(`👥 Usuários acessíveis: ${userCount}`);
     console.log(`🚀 Bot está online e pronto para uso!`);
 
     // Configuração de presença
